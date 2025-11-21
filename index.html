@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilan - Experto en Tecnología, Edición y Soluciones Digitales</title>
+    <meta name="description" content="Dilan - Especialista en tecnología, edición digital, desbloqueo de celulares, mantenimiento de equipos, creación de páginas web y soluciones digitales personalizadas. Resultados 100% garantizados.">
+    <meta name="keywords" content="tecnología, edición digital, desbloqueo celulares, mantenimiento computadoras, páginas web, soluciones digitales, Dilan, Linux">
+    <meta name="author" content="Dilan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dilan-tecnologia.com/">
+    <meta property="og:title" content="Dilan - Experto en Tecnología y Soluciones Digitales">
+    <meta property="og:description" content="Especialista en tecnología, edición digital y soluciones informáticas. Transformo problemas en soluciones digitales efectivas.">
+    <meta property="og:image" content="https://dilan-tecnologia.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dilan-tecnologia.com/">
+    <meta property="twitter:title" content="Dilan - Experto en Tecnología y Soluciones Digitales">
+    <meta property="twitter:description" content="Especialista en tecnología, edición digital y soluciones informáticas. Transformo problemas en soluciones digitales efectivas.">
+    <meta property="twitter:image" content="https://dilan-tecnologia.com/images/twitter-image.jpg">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Dilan - Soluciones Digitales",
+      "description": "Especialista en tecnología, edición digital y soluciones informáticas",
+      "url": "https://dilan-tecnologia.com",
+      "telephone": "+54-9-376-516-8963",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "serviceType": [
+        "Desbloqueo de celulares",
+        "Mantenimiento de computadoras", 
+        "Edición de fotos y videos",
+        "Desarrollo web",
+        "Asistencia digital"
+      ],
+      "areaServed": "Argentina"
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0a0a0f;
+            --secondary-color: #12121a;
+            --accent-color: #00f7ff;
+            --accent-color-2: #b300ff;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --card-bg: rgba(18, 18, 26, 0.8);
+            --border-radius: 10px;
+            --transition: all 0.3s ease;
+            --container-padding: clamp(1rem, 4vw, 2rem);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-size: clamp(1rem, 2vw, 1.125rem);
+        }
+
+        .container {
+            width: min(90%, 1200px);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            padding: 0.75rem 0;
+            box-shadow: 0 5px 20px rgba(0, 247, 255, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: clamp(1.5rem, 4vw, 1.8rem);
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: clamp(1rem, 3vw, 2rem);
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--text-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 247, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(179, 0, 255, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(2rem, 5vw, 3rem);
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-text {
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: clamp(0.75rem, 2vw, 0.875rem) clamp(1.5rem, 3vw, 1.875rem);
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            color: var(--primary-color);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            flex: 0 1 auto;
+            min-width: max-content;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color-2), var(--accent-color));
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 0;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 247, 255, 0.3);
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+
+        .btn-instagram::before {
+            background: linear-gradient(45deg, #FD1D1D, #E1306C, #C13584, #833AB4, #5851DB, #405DE6);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E, #075E54);
+        }
+
+        .btn-whatsapp::before {
+            background: linear-gradient(45deg, #075E54, #128C7E, #25D366);
+        }
+
+        /* Sections */
+        section {
+            padding: clamp(3rem, 8vw, 6.25rem) 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: clamp(2rem, 5vw, 3.75rem);
+        }
+
+        .section-title h2 {
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.625rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5rem;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+            gap: clamp(2rem, 5vw, 3rem);
+            align-items: center;
+        }
+
+        .about-text {
+            padding-right: clamp(0rem, 3vw, 1.25rem);
+        }
+
+        .about-text p {
+            margin-bottom: 1.25rem;
+            font-size: clamp(1rem, 2vw, 1.1rem);
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 600;
+            font-style: italic;
+            padding: 1.25rem;
+            border-left: 3px solid var(--accent-color);
+            margin: 1.875rem 0;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: var(--transition);
+            height: auto;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0, 247, 255, 0.2);
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+            gap: clamp(1.25rem, 3vw, 1.875rem);
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: clamp(1.25rem, 3vw, 1.875rem);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 247, 255, 0.05), rgba(179, 0, 255, 0.05));
+            z-index: -1;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-0.625rem);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 247, 255, 0.2);
+        }
+
+        .service-icon {
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            margin-bottom: 1.25rem;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .service-card h3 {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            margin-bottom: 0.9375rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            flex-grow: 1;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+            gap: clamp(2rem, 5vw, 3rem);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.9375rem;
+            padding: 0.9375rem;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            transform: translateX(0.625rem);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            width: 2.5rem;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .contact-text h3 {
+            font-size: clamp(1rem, 2vw, 1.1rem);
+            margin-bottom: 0.3125rem;
+        }
+
+        .contact-text p {
+            color: var(--text-muted);
+            font-size: clamp(0.875rem, 2vw, 0.9rem);
+        }
+
+        .contact-form {
+            background-color: var(--card-bg);
+            padding: clamp(1.25rem, 3vw, 1.875rem);
+            border-radius: var(--border-radius);
+            height: fit-content;
+        }
+
+        .final-message {
+            text-align: center;
+            margin-top: clamp(2rem, 5vw, 3.125rem);
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            font-weight: 500;
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625rem;
+            padding: clamp(0.75rem, 2vw, 0.875rem) clamp(1.25rem, 3vw, 1.5625rem);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            text-align: center;
+        }
+
+        .contact-btn.instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+
+        .contact-btn.instagram:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(225, 48, 108, 0.3);
+        }
+
+        .contact-btn.whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E, #075E54);
+        }
+
+        .contact-btn.whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            padding: clamp(2rem, 5vw, 3.125rem) 0 clamp(1rem, 3vw, 1.25rem);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.875rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.9375rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: clamp(2.5rem, 5vw, 2.5rem);
+            height: clamp(2.5rem, 5vw, 2.5rem);
+            border-radius: 50%;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .social-link:hover {
+            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+            transform: translateY(-5px);
+        }
+
+        .social-link.instagram:hover {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+
+        .social-link.whatsapp:hover {
+            background: linear-gradient(45deg, #25D366, #128C7E, #075E54);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading optimization */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --text-color: #ffffff;
+                --text-muted: #cccccc;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: min(80%, 300px);
+                height: calc(100vh - 70px);
+                background: var(--secondary-color);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: min(100%, 250px);
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-content, .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .contact-icon {
+                width: auto;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            :root {
+                --primary-color: white;
+                --text-color: black;
+                --text-muted: #555;
+            }
+
+            .btn, .social-link {
+                display: none;
+            }
+
+            header {
+                position: static;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo" aria-label="Dilan - Inicio">
+                    <i class="fas fa-code" aria-hidden="true"></i> Dilan
+                </a>
+                <nav aria-label="Navegación principal">
+                    <ul class="nav-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu" aria-label="Abrir menú" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Soy <span>Dilan</span> — Tu aliado digital para todo lo que necesite precisión, creatividad y tecnología.</h1>
+                    <p>Transformo problemas en soluciones digitales: desde desbloquear un celular hasta crear una página web completa.</p>
+                    <div class="btn-container">
+                        <a href="#servicios" class="btn">Ver mis servicios</a>
+                        <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/linux_d.e?igsh=MTVkdDhkbWFrNzBuZw==" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+                            <i class="fab fa-instagram"></i> Contactar por Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Sobre Mí</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Soy Dilan, un apasionado por la tecnología con años de experiencia práctica en distintos campos digitales. Desde pequeño, me fascinó el mundo de la informática y cómo podemos utilizar la tecnología para resolver problemas y crear soluciones innovadoras.</p>
+                    <p>Mi experiencia abarca desde el mantenimiento y optimización de sistemas hasta la creación de contenido digital y desarrollo web. Me mantengo constantemente actualizado con las últimas tendencias tecnológicas para ofrecer siempre las mejores soluciones.</p>
+                   </div>
+                <div class="about-image fade-in">
+                    <img src="https://virtual.usmp.edu.pe/images/Habilidades-digitales-ilustracion_736w.webp" alt="Tecnología y trabajo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Mis Servicios</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-unlock-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Desbloqueo de celulares (Android)</h3>
+                    <p>Dependiendo de la versión, asistencia personalizada y segura para desbloquear tu dispositivo Android.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop" aria-hidden="true"></i>
+                    </div>
+                    <h3>Mantenimiento de netbooks y optimización de sistemas</h3>
+                    <p>Limpieza, instalación y mejora de rendimiento para que tu equipo funcione como nuevo.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-photo-video" aria-hidden="true"></i>
+                    </div>
+                    <h3>Edición de fotos y videos</h3>
+                    <p>Retoques, montajes, videos promocionales o artísticos con calidad profesional.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                    </div>
+                    <h3>Experiencia con Inteligencia Artificial</h3>
+                    <p>Uso de IA para creación, automatización y contenido innovador y de vanguardia.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <h3>Creación de páginas web</h3>
+                    <p>Desarrollo de portafolios profesionales, sitios para servicios y emprendimientos. Diseños modernos, rápidos y adaptables a cualquier necesidad.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Word, PDF y formatos específicos</h3>
+                    <p>Conversión, rediseño y organización profesional de documentos de cualquier tipo.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <h3>Trabajos prácticos y asistencia digital</h3>
+                    <p>Realización de tareas o proyectos con formato impecable y atención al detalle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>WhatsApp</h3>
+                            <p>+54 9 376 516-8963</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Instagram</h3>
+                            <p>@linux_d.e</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Respuesta</h3>
+                            <p>Generalmente respondo en menos de 24 horas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <div class="instagram-contact">
+                        <h3>¡Contáctame directamente!</h3>
+                        <p>Elige el método que prefieras para comunicarte conmigo. Estoy aquí para ayudarte con cualquier consulta o proyecto.</p>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> Enviar mensaje por WhatsApp
+                            </a>
+                            <a href="https://www.instagram.com/linux_d.e?igsh=MTVkdDhkbWFrNzBuZw==" target="_blank" rel="noopener noreferrer" class="contact-btn instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i> Enviar mensaje por Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="final-message fade-in">
+                "Si buscás resultados perfectos, llegaste al lugar correcto."
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-code" aria-hidden="true"></i> Dilan
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer" class="social-link whatsapp" aria-label="Contactar por WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/linux_d.e?igsh=MTVkdDhkbWFrNzBuZw==" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Sígueme en Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Dilan - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Fade in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = function() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', fadeInOnScroll);
+        // Trigger once on load
+        fadeInOnScroll();
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Performance optimization - defer non-critical CSS
+        window.addEventListener('load', function() {
+            // Load any additional resources here if needed
+        });
+    </script>
+</body>
+</html>
