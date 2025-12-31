@@ -96,12 +96,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ========== TRACK WHATSAPP CLICKS (para analytics si los agregas después) ==========
+    // ========== TRACK WHATSAPP CLICKS ==========
     document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
         link.addEventListener('click', function() {
             console.log('WhatsApp click desde: ' + window.location.href);
-            // Aquí puedes agregar Google Analytics o otro tracking
-            // gtag('event', 'whatsapp_click', { 'event_category': 'Contacto' });
+            // Aquí puedes agregar Google Analytics si lo deseas:
+            // if (typeof gtag !== 'undefined') {
+            //     gtag('event', 'whatsapp_click', { 'event_category': 'Contacto' });
+            // }
         });
     });
     
@@ -111,7 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const img = entry.target;
-                    img.src = img.dataset.src;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                    }
                     img.classList.add('loaded');
                     observer.unobserve(img);
                 }
@@ -125,21 +129,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ========== ACTIVE NAV LINK ON SCROLL ==========
     const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', function() {
-        const scrollY = window.pageYOffset;
-        
-        sections.forEach(section => {
-            const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 100;
-            const sectionId = section.getAttribute('id');
+    if (sections.length > 0) {
+        window.addEventListener('scroll', function() {
+            const scrollY = window.pageYOffset;
             
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelector('.nav-links a[href*=' + sectionId + ']').classList.add('active');
-            } else {
-                document.querySelector('.nav-links a[href*=' + sectionId + ']').classList.remove('active');
-            }
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    const activeLink = document.querySelector('.nav-links a[href="#' + sectionId + '"]');
+                    if (activeLink) {
+                        // Remover active de todos los links
+                        document.querySelectorAll('.nav-links a').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        // Agregar active al link actual
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
         });
-    });
+    }
     
     // ========== PERFORMANCE OPTIMIZATION ==========
     // Debounce para eventos de scroll y resize
@@ -151,8 +163,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 250);
     });
     
-    // ========== ADD LOADING CLASS TO BODY (remueve después de cargar) ==========
+    // ========== ADD LOADING CLASS TO BODY ==========
     window.addEventListener('load', function() {
         document.body.classList.add('loaded');
+        
+        // Agregar transición suave después de cargar
+        setTimeout(() => {
+            document.body.style.transition = 'opacity 0.3s ease';
+            document.body.style.opacity = '1';
+        }, 100);
     });
+    
+    // ========== INICIALIZAR OPACIDAD DEL BODY ==========
+    document.body.style.opacity = '0';
 });

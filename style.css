@@ -349,91 +349,6 @@ section {
     color: #FFC107;
 }
 
-/* SOBRE MÍ */
-#sobre-mi {
-    position: relative;
-    overflow: hidden;
-}
-
-#sobre-mi::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 247, 255, 0.03) 0%, rgba(179, 0, 255, 0.03) 100%);
-    z-index: -1;
-}
-
-.about-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.about-text {
-    text-align: left;
-}
-
-.about-text h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--accent-color);
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-}
-
-.honesty-box {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    margin-top: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.honesty-box h4 {
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.honesty-box p {
-    margin-bottom: 0;
-    font-size: 1rem;
-}
-
-.about-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: var(--border-radius);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    transition: var(--transition);
-}
-
-.about-image img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 20px 40px rgba(0, 247, 255, 0.2);
-}
-
 /* CONTACTO */
 .contact-content {
     display: grid;
@@ -642,14 +557,9 @@ footer {
         font-size: 2.8rem;
     }
     
-    .about-content,
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-    
-    .about-image {
-        order: -1;
     }
 }
 
@@ -737,5 +647,9 @@ footer {
     
     .service-card {
         padding: 2rem 1.5rem;
+    }
+    
+    section {
+        padding: 4rem 0;
     }
 }
