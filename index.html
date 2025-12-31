@@ -5,52 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dilan | Creación de Portafolios Digitales y Asistencia con Contenido</title>
     
-    <!-- Meta Description optimizada -->
-    <meta name="description" content="Dilan - Creo portafolios digitales para mostrar tu trabajo, ayudo con edición básica de fotos/videos, diseño de documentos y asistencia digital. Trabajo directo por WhatsApp.">
-    
-    <!-- Keywords específicas -->
-    <meta name="keywords" content="crear portafolio digital, páginas web personales, portafolios profesionales, ayuda con fotos, ayuda con videos, diseño documentos, asistencia digital, Dilan, WhatsApp">
-    
-    <!-- Author -->
-    <meta name="author" content="Dilan - Portafolios Digitales">
-    <meta name="copyright" content="Dilan">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Dilan - Creo portafolios digitales para mostrar tu trabajo, ayudo con edición básica de fotos/videos, diseño de documentos y asistencia digital. Trabajo directo por WhatsApp en Argentina.">
+    <meta name="keywords" content="portafolio digital, página web personal, portafolio profesional, edición de fotos básica, edición de videos básica, diseño de documentos, asistencia digital, Dilan, WhatsApp, Argentina, Misiones">
+    <meta name="author" content="Dilan">
+    <meta name="copyright" content="Dilan - Portafolios Digitales">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://dilan-digital.com">
+    <link rel="canonical" href="https://digital-services-arg.github.io">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dilan-digital.com">
+    <meta property="og:url" content="https://digital-services-arg.github.io">
     <meta property="og:title" content="Dilan | Portafolios Digitales y Ayuda con Contenido">
     <meta property="og:description" content="Creo portafolios para mostrar tu trabajo y ayudo con edición básica de fotos/videos, documentos y asistencia digital. Contacto por WhatsApp.">
-    <meta property="og:image" content="https://dilan-digital.com/images/og-image.jpg">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0&auto=format&fit=crop&w=1200&q=80">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Dilan - Portafolios Digitales">
     <meta property="og:locale" content="es_AR">
     <meta property="og:site_name" content="Dilan Portafolios Digitales">
     
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dilan | Portafolios Digitales y Ayuda con Contenido">
+    <meta name="twitter:description" content="Creo portafolios digitales y ayudo con contenido básico. Trabajo directo por WhatsApp.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0&auto=format&fit=crop&w=1200&q=80">
+    
     <!-- WhatsApp Meta Tags -->
     <meta property="og:phone_number" content="+5493765168963">
-    <meta property="og:email" content="contacto@dilan-digital.com">
     <meta property="og:country-name" content="Argentina">
     
-    <!-- Schema.org Markup Especializado -->
+    <!-- Geo Tags (SEO local) -->
+    <meta name="geo.region" content="AR-N">
+    <meta name="geo.placename" content="Misiones">
+    <meta name="geo.position" content="-26.875;-54.651">
+    <meta name="ICBM" content="-26.875, -54.651">
+    
+    <!-- Schema.org Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
+        "@type": "LocalBusiness",
         "name": "Dilan - Portafolios Digitales",
         "description": "Creación de portafolios digitales personales y asistencia con contenido visual",
-        "url": "https://dilan-digital.com",
+        "url": "https://digital-services-arg.github.io",
         "telephone": "+54-9-376-516-8963",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Misiones",
+            "addressCountry": "AR"
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": -26.875,
+                "longitude": -54.651
+            },
+            "geoRadius": "50000"
+        },
         "serviceType": [
             "Creación de portafolios digitales",
-            "Ayuda con edición de fotos y videos",
+            "Edición básica de fotos",
+            "Edición básica de videos",
             "Diseño de documentos",
             "Asistencia digital"
-        ]
+        ],
+        "priceRange": "Consultar",
+        "openingHours": "Mo-Su 09:00-21:00"
     }
     </script>
     
@@ -62,697 +87,11 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <style>
-        /* RESET Y VARIABLES */
-        :root {
-            --primary-color: #0a0a0f;
-            --secondary-color: #12121a;
-            --accent-color: #00f7ff;
-            --accent-color-2: #b300ff;
-            --text-color: #e0e0e0;
-            --text-muted: #b0b0b0;
-            --card-bg: rgba(18, 18, 26, 0.9);
-            --border-radius: 12px;
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--primary-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        /* HEADER */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background-color: rgba(10, 10, 15, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            transition: var(--transition);
-        }
-
-        header.scrolled {
-            padding: 0.75rem 0;
-            box-shadow: 0 5px 20px rgba(0, 247, 255, 0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo i {
-            font-size: 1.5rem;
-        }
-
-        /* NAVEGACIÓN */
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            transition: var(--transition);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-color);
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 100px;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 20% 50%, rgba(0, 247, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(179, 0, 255, 0.1) 0%, transparent 50%);
-            z-index: -1;
-        }
-
-        .hero-content {
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .hero h1 span {
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            color: var(--text-muted);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .whatsapp-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(37, 211, 102, 0.1);
-            color: #25D366;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-            border: 1px solid rgba(37, 211, 102, 0.2);
-        }
-
-        /* BOTONES - SOLO WHATSAPP */
-        .btn-container {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1rem 2rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            min-width: 200px;
-            justify-content: center;
-        }
-
-        .btn-primary {
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            color: var(--primary-color);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 247, 255, 0.3);
-        }
-
-        .btn-whatsapp {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-        }
-
-        .btn-whatsapp:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 6rem 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3.75rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -0.625rem;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 5rem;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-        }
-
-        /* SERVICIOS HONESTOS */
-        #servicios {
-            background: rgba(10, 10, 15, 0.7);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .service-card {
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius);
-            padding: 2.5rem 2rem;
-            transition: var(--transition);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            height: 100%;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-            border-color: rgba(0, 247, 255, 0.3);
-        }
-
-        .service-icon {
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .service-card h3 {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: var(--accent-color);
-        }
-
-        .service-card p {
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .service-features {
-            list-style: none;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .service-features li {
-            color: var(--text-muted);
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-        }
-
-        .service-features li i {
-            color: var(--accent-color);
-            margin-top: 0.2rem;
-            flex-shrink: 0;
-        }
-
-        .honesty-note {
-            background: rgba(255, 193, 7, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-            border-left: 3px solid #FFC107;
-        }
-
-        .honesty-note p {
-            font-size: 0.9rem;
-            margin-bottom: 0;
-            color: #FFC107;
-        }
-
-        /* SOBRE MÍ HONESTO */
-        #sobre-mi {
-            position: relative;
-            overflow: hidden;
-        }
-
-        #sobre-mi::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 247, 255, 0.03) 0%, rgba(179, 0, 255, 0.03) 100%);
-            z-index: -1;
-        }
-
-        .about-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            margin-bottom: 3rem;
-        }
-
-        .about-text {
-            text-align: left;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent-color);
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-muted);
-            line-height: 1.7;
-        }
-
-        .honesty-box {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            margin-top: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .honesty-box h4 {
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .honesty-box p {
-            margin-bottom: 0;
-            font-size: 1rem;
-        }
-
-        .about-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .about-image img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            transition: var(--transition);
-        }
-
-        .about-image img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 20px 40px rgba(0, 247, 255, 0.2);
-        }
-
-        /* CONTACTO - SOLO WHATSAPP */
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.25rem;
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .contact-item:hover {
-            transform: translateX(10px);
-            border-color: var(--accent-color);
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            width: 3rem;
-            text-align: center;
-        }
-
-        .contact-text h3 {
-            font-size: 1.1rem;
-            margin-bottom: 0.3125rem;
-        }
-
-        .contact-text p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .contact-form {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .contact-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .contact-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            padding: 1rem 1.5rem;
-            color: white;
-            text-decoration: none;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            transition: var(--transition);
-            text-align: center;
-        }
-
-        .contact-btn.whatsapp {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-        }
-
-        .contact-btn.whatsapp:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
-        }
-
-        /* FOOTER - SOLO WHATSAPP */
-        footer {
-            background-color: var(--secondary-color);
-            padding: 3rem 0 1.25rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.875rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 0.9375rem;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
-            background-color: var(--card-bg);
-            color: var(--text-color);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .social-link:hover {
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
-            transform: translateY(-5px);
-            color: white;
-        }
-
-        .social-link.whatsapp {
-            background: rgba(37, 211, 102, 0.1);
-            color: #25D366;
-        }
-
-        .social-link.whatsapp:hover {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 1.25rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .about-content,
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .about-image {
-                order: -1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 70px;
-                right: -100%;
-                width: 80%;
-                max-width: 300px;
-                height: calc(100vh - 70px);
-                background: var(--secondary-color);
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                padding-top: 2rem;
-                transition: var(--transition);
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-                z-index: 999;
-            }
-
-            .nav-links.active {
-                right: 0;
-            }
-
-            .mobile-menu {
-                display: block;
-                z-index: 1000;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-            
-            .btn-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .contact-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 0.5rem;
-            }
-            
-            .contact-icon {
-                width: auto;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
-            }
-            
-            .service-card {
-                padding: 2rem 1.5rem;
-            }
-        }
-
-        /* ANIMACIONES */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 </head>
 <body>
     <!-- Header -->
@@ -803,12 +142,12 @@
         </div>
     </section>
 
-    <!-- SERVICIOS HONESTOS -->
+    <!-- Servicios -->
     <section id="servicios" class="services">
         <div class="container">
             <div class="section-title fade-in">
                 <h2>Servicios</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Especializado en portafolios, honesto con lo demás</p>
+                <p class="section-subtitle">Especializado en portafolios, honesto con lo demás</p>
             </div>
             
             <div class="services-grid">
@@ -909,12 +248,12 @@
         </div>
     </section>
 
-    <!-- SOBRE MÍ HONESTO -->
+    <!-- Sobre Mí -->
     <section id="sobre-mi">
         <div class="container">
             <div class="section-title fade-in">
                 <h2>Sobre Mí</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Honesto sobre lo que sé y lo que ofrezco</p>
+                <p class="section-subtitle">Honesto sobre lo que sé y lo que ofrezco</p>
             </div>
             
             <div class="about-container">
@@ -931,7 +270,7 @@
                     </div>
                     
                     <div class="about-image">
-                        <img src="https://www.masip.es/wp-content/uploads/2023/10/asistente-virtual-que-es-beneficios-para-tu-negocio-scaled.jpeg" 
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0&auto=format&fit=crop&w=800&q=80" 
                              alt="Dilan - Especializado en portafolios, ayuda básica con fotos y videos" 
                              loading="lazy">
                     </div>
@@ -940,12 +279,12 @@
         </div>
     </section>
 
-    <!-- CONTACTO - SOLO WHATSAPP -->
+    <!-- Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
             <div class="section-title fade-in">
                 <h2>Contacto</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Directo por WhatsApp, sin intermediarios</p>
+                <p class="section-subtitle">Directo por WhatsApp, sin intermediarios</p>
             </div>
             
             <div class="contact-content">
@@ -957,7 +296,7 @@
                         <div class="contact-text">
                             <h3>WhatsApp Directo</h3>
                             <p>+54 9 376 516-8963</p>
-                            <p style="font-size: 0.85rem; color: #25D366;">Único método de contacto</p>
+                            <p class="contact-subtitle">Único método de contacto</p>
                         </div>
                     </div>
                     
@@ -968,7 +307,7 @@
                         <div class="contact-text">
                             <h3>Tiempo de Respuesta</h3>
                             <p>Normalmente respondo en menos de 12 horas</p>
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">A veces más rápido</p>
+                            <p class="contact-subtitle">A veces más rápido</p>
                         </div>
                     </div>
                     
@@ -979,7 +318,7 @@
                         <div class="contact-text">
                             <h3>Cómo Trabajamos</h3>
                             <p>Todo por WhatsApp</p>
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Consultas, coordinación y entrega</p>
+                            <p class="contact-subtitle">Consultas, coordinación y entrega</p>
                         </div>
                     </div>
                     
@@ -990,7 +329,7 @@
                         <div class="contact-text">
                             <h3>Claridad Antes de Empezar</h3>
                             <p>Te explico exactamente qué puedo hacer</p>
-                            <p style="font-size: 0.85rem; color: var(--accent-color);">Sin promesas exageradas</p>
+                            <p class="contact-subtitle">Sin promesas exageradas</p>
                         </div>
                     </div>
                 </div>
@@ -1005,24 +344,24 @@
                         </a>
                     </div>
                     
-                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(37, 211, 102, 0.05); border-radius: 8px; border-left: 3px solid #25D366;">
-                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-                            <i class="fas fa-info-circle" style="color: #25D366;"></i>
+                    <div class="whatsapp-info">
+                        <p>
+                            <i class="fas fa-info-circle"></i>
                             <strong>Para agilizar:</strong>
                         </p>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">
-                            1. Dime qué necesitas específicamente<br>
-                            2. Si es para portafolio, qué quieres mostrar<br>
-                            3. Si es edición, qué ajustes buscas<br>
-                            4. Plazos o fechas importantes
-                        </p>
+                        <ul>
+                            <li>Dime qué necesitas específicamente</li>
+                            <li>Si es para portafolio, qué quieres mostrar</li>
+                            <li>Si es edición, qué ajustes buscas</li>
+                            <li>Plazos o fechas importantes</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER - SOLO WHATSAPP -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -1041,98 +380,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            
-            // Header scroll effect
-            const header = document.getElementById('header');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-            
-            // Fade in animations
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const fadeInOnScroll = function() {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    if (elementTop < window.innerHeight - 100) {
-                        element.classList.add('visible');
-                    }
-                });
-            };
-            window.addEventListener('scroll', fadeInOnScroll);
-            fadeInOnScroll();
-            
-            // Mobile menu
-            const mobileMenu = document.querySelector('.mobile-menu');
-            const navLinks = document.querySelector('.nav-links');
-            if (mobileMenu) {
-                mobileMenu.addEventListener('click', function() {
-                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !isExpanded);
-                    navLinks.classList.toggle('active');
-                });
-            }
-            
-            // Close mobile menu on link click
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                    mobileMenu.setAttribute('aria-expanded', 'false');
-                });
-            });
-            
-            // Smooth scrolling
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    if (href === '#') return;
-                    
-                    e.preventDefault();
-                    const targetElement = document.querySelector(href);
-                    if (targetElement) {
-                        const headerHeight = header.offsetHeight;
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                        const offsetPosition = targetPosition - headerHeight;
-                        
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Update copyright year
-            document.getElementById('current-year').textContent = new Date().getFullYear();
-            
-            // Close mobile menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!navLinks.contains(event.target) && !mobileMenu.contains(event.target) && navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    mobileMenu.setAttribute('aria-expanded', 'false');
-                }
-            });
-            
-            // Handle escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    mobileMenu.setAttribute('aria-expanded', 'false');
-                }
-            });
-            
-            // Track WhatsApp clicks
-            document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
-                link.addEventListener('click', function() {
-                    console.log('WhatsApp click desde: ' + window.location.href);
-                });
-            });
-        });
-    </script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
