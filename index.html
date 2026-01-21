@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilan | Creación de Portafolios Digitales y Asistencia con Contenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <title>Dilan Enriquez | Portafolios Digitales y Asistencia con Contenido</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Dilan - Creo portafolios digitales para mostrar tu trabajo, ayudo con edición básica de fotos/videos, diseño de documentos y asistencia digital. Trabajo directo por WhatsApp en Argentina.">
-    <meta name="keywords" content="portafolio digital, página web personal, portafolio profesional, edición de fotos básica, edición de videos básica, diseño de documentos, asistencia digital, Dilan, WhatsApp, Argentina, Misiones">
-    <meta name="author" content="Dilan">
-    <meta name="copyright" content="Dilan - Portafolios Digitales">
+    <meta name="description" content="Dilan Enriquez - Creo portafolios digitales profesionales, ayudo con edición básica de fotos/videos, diseño de documentos y asistencia digital. Trabajo directo por WhatsApp en Argentina.">
+    <meta name="keywords" content="portafolio digital, página web personal, portafolio profesional, edición de fotos, edición de videos, diseño de documentos, asistencia digital, Dilan Enriquez, WhatsApp, Argentina, Misiones">
+    <meta name="author" content="Dilan Enriquez">
+    <meta name="copyright" content="Dilan Enriquez">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
@@ -19,20 +19,20 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://digital-services-arg.github.io">
-    <meta property="og:title" content="Dilan | Portafolios Digitales y Ayuda con Contenido">
-    <meta property="og:description" content="Creo portafolios para mostrar tu trabajo y ayudo con edición básica de fotos/videos, documentos y asistencia digital. Contacto por WhatsApp.">
-    <meta property="og:image" content="images/hero-image.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:title" content="Dilan Enriquez | Portafolios Digitales y Ayuda con Contenido">
+    <meta property="og:description" content="Creo portafolios profesionales y ayudo con edición básica de fotos/videos, documentos y asistencia digital. Contacto por WhatsApp.">
+    <meta property="og:image" content="https://digital-services-arg.github.io/images/hero-image.png">
+    <meta property="og:image:width" content="860">
+    <meta property="og:image:height" content="860">
     <meta property="og:image:alt" content="Dilan Enriquez - Portafolios Digitales">
     <meta property="og:locale" content="es_AR">
-    <meta property="og:site_name" content="Dilan Enriquez Portafolios Digitales">
+    <meta property="og:site_name" content="Dilan Enriquez">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dilan | Portafolios Digitales y Ayuda con Contenido">
+    <meta name="twitter:title" content="Dilan Enriquez | Portafolios Digitales y Ayuda con Contenido">
     <meta name="twitter:description" content="Creo portafolios digitales y ayudo con contenido básico. Trabajo directo por WhatsApp.">
-    <meta name="twitter:image" content="images/hero-image.webp">
+    <meta name="twitter:image" content="https://digital-services-arg.github.io/images/hero-image.png">
     
     <!-- WhatsApp Meta Tags -->
     <meta property="og:phone_number" content="+5493765168963">
@@ -79,186 +79,204 @@
     }
     </script>
     
-    <!-- Fonts -->
+    <!-- Preconnect para fuentes externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <!-- Preload para imagen hero -->
+    <link rel="preload" as="image" href="images/hero-image.webp" type="image/webp">
 </head>
 <body>
     <!-- Header -->
     <header id="header">
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">
-                    <i class="fas fa-code"></i> Dilan Enriquez
+                <a href="#" class="logo" aria-label="Dilan Enriquez - Inicio">
+                    <i class="fas fa-code" aria-hidden="true"></i> Dilan Enriquez
                 </a>
-                <nav>
+                <nav aria-label="Navegación principal">
                     <ul class="nav-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
                     </ul>
                 </nav>
-                <button class="mobile-menu" aria-label="Menú de navegación">
-                    <i class="fas fa-bars"></i>
+                <button class="mobile-menu" aria-label="Menú de navegación" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="inicio" aria-label="Sección principal">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text fade-in">
-                    <h1>Portafolios Digitales <span>& Ayuda con Contenido</span></h1>
-                    <p>Creo portafolios para que muestres tu trabajo profesionalmente. También te ayudo con edición básica de fotos/videos, diseño de documentos y asistencia digital cuando lo necesites.</p>
+                    <h1 class="hero-title">Portafolios Digitales <span>& Ayuda con Contenido</span></h1>
+                    <p class="hero-description">Creo portafolios para que muestres tu trabajo profesionalmente. También te ayudo con edición básica de fotos/videos, diseño de documentos y asistencia digital cuando lo necesites.</p>
                     
-                    <div class="whatsapp-badge">
-                        <i class="fab fa-whatsapp"></i>
+                    <div class="whatsapp-badge" role="note" aria-label="Método de trabajo">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
                         <span>Trabajo directo por WhatsApp</span>
                     </div>
                     
                     <div class="btn-container">
-                        <a href="#servicios" class="btn btn-primary">
-                            <i class="fas fa-briefcase"></i> Ver Servicios
+                        <a href="#servicios" class="btn btn-primary" aria-label="Ver servicios ofrecidos">
+                            <i class="fas fa-briefcase" aria-hidden="true"></i> Ver Servicios
                         </a>
-                        <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                        <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-whatsapp" aria-label="Contactar por WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Contactar por WhatsApp
                         </a>
                     </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <picture>
+                        <source srcset="images/hero-image.webp" type="image/webp">
+                        <source srcset="images/hero-image.png" type="image/png">
+                        <img src="images/hero-image.png" 
+                             alt="Dilan Enriquez - Portafolios Digitales y Ayuda con Contenido" 
+                             width="860" 
+                             height="860" 
+                             loading="eager"
+                             decoding="async">
+                    </picture>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="services">
+    <section id="servicios" class="services" aria-labelledby="servicios-title">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Servicios</h2>
+                <h2 id="servicios-title">Servicios</h2>
                 <p class="section-subtitle">Especializado en portafolios, honesto con lo demás</p>
             </div>
             
             <div class="services-grid">
-                <!-- Servicio 1: Portafolios (especialidad) -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <!-- Servicio 1: Portafolios -->
+                <article class="service-card fade-in">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Portafolios Digitales</h3>
                     <p><strong>Mi servicio principal.</strong> Creo páginas web personales para que muestres tu trabajo, proyectos o servicios de forma profesional y atractiva.</p>
                     
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Diseño personalizado para tu estilo</li>
-                        <li><i class="fas fa-check"></i> Optimizado para móviles y tablets</li>
-                        <li><i class="fas fa-check"></i> Galerías para mostrar tus proyectos</li>
-                        <li><i class="fas fa-check"></i> Información de contacto integrada</li>
-                        <li><i class="fas fa-check"></i> Fácil de actualizar cuando quieras</li>
-                        <li><i class="fas fa-check"></i> Ideal para mostrar, no para vender</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Diseño personalizado para tu estilo</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Optimizado para móviles y tablets</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Galerías para mostrar tus proyectos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Información de contacto integrada</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Fácil de actualizar cuando quieras</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Ideal para mostrar, no para vender</li>
                     </ul>
-                </div>
+                </article>
                 
-                <!-- Servicio 2: Ayuda con fotos (honesto) -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <!-- Servicio 2: Ayuda con fotos -->
+                <article class="service-card fade-in">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-images"></i>
                     </div>
                     <h3>Ayuda con Fotos</h3>
                     <p><strong>No soy experto en edición, pero sé lo suficiente para ayudarte.</strong> Retoques básicos, ajustes de color, recortes y preparación para web o documentos.</p>
                     
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Ajustes básicos de color y luz</li>
-                        <li><i class="fas fa-check"></i> Recortes y composiciones simples</li>
-                        <li><i class="fas fa-check"></i> Preparación para web o documentos</li>
-                        <li><i class="fas fa-check"></i> Redimensionamiento para diferentes usos</li>
-                        <li><i class="fas fa-check"></i> Formato correcto para tu necesidad</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Ajustes básicos de color y luz</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Recortes y composiciones simples</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Preparación para web o documentos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Redimensionamiento para diferentes usos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Formato correcto para tu necesidad</li>
                     </ul>
                     
-                    <div class="honesty-note">
-                        <p><i class="fas fa-hand-paper"></i> <strong>Honestidad:</strong> No hago retoques profesionales complejos, pero sí puedo ayudarte con lo básico que necesites.</p>
+                    <div class="honesty-note" role="note">
+                        <p><i class="fas fa-hand-paper" aria-hidden="true"></i> <strong>Honestidad:</strong> No hago retoques profesionales complejos, pero sí puedo ayudarte con lo básico que necesites.</p>
                     </div>
-                </div>
+                </article>
                 
-                <!-- Servicio 3: Ayuda con videos (honesto) -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <!-- Servicio 3: Ayuda con videos -->
+                <article class="service-card fade-in">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-film"></i>
                     </div>
                     <h3>Ayuda con Videos</h3>
                     <p><strong>Edición básica para presentar tu trabajo.</strong> Cortes simples, añadir textos, ajustar audio básico y preparar videos para mostrar proyectos o contenido.</p>
                     
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Cortes y unión de clips</li>
-                        <li><i class="fas fa-check"></i> Añadir textos y gráficos simples</li>
-                        <li><i class="fas fa-check"></i> Ajuste básico de volumen</li>
-                        <li><i class="fas fa-check"></i> Preparación para redes o presentaciones</li>
-                        <li><i class="fas fa-check"></i> Conversión a formatos adecuados</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Cortes y unión de clips</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Añadir textos y gráficos simples</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Ajuste básico de volumen</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Preparación para redes o presentaciones</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Conversión a formatos adecuados</li>
                     </ul>
                     
-                    <div class="honesty-note">
-                        <p><i class="fas fa-hand-paper"></i> <strong>Honestidad:</strong> No hago efectos especiales complejos, pero sí puedo ayudarte a crear videos presentables para mostrar tu trabajo.</p>
+                    <div class="honesty-note" role="note">
+                        <p><i class="fas fa-hand-paper" aria-hidden="true"></i> <strong>Honestidad:</strong> No hago efectos especiales complejos, pero sí puedo ayudarte a crear videos presentables para mostrar tu trabajo.</p>
                     </div>
-                </div>
+                </article>
                 
                 <!-- Servicio 4: Diseño de documentos -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <article class="service-card fade-in">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <h3>Diseño de Documentos</h3>
                     <p>Doy formato profesional a tus documentos, presentaciones o trabajos. Organizo el contenido para que sea claro, visualmente atractivo y listo para compartir.</p>
                     
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Formato limpio en Word/PDF</li>
-                        <li><i class="fas fa-check"></i> Presentaciones visuales atractivas</li>
-                        <li><i class="fas fa-check"></i> Organización lógica del contenido</li>
-                        <li><i class="fas fa-check"></i> Inserción de imágenes y gráficos</li>
-                        <li><i class="fas fa-check"></i> Preparación para impresión o envío</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Formato limpio en Word/PDF</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Presentaciones visuales atractivas</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Organización lógica del contenido</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Inserción de imágenes y gráficos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Preparación para impresión o envío</li>
                     </ul>
-                </div>
+                </article>
                 
                 <!-- Servicio 5: Asistencia digital -->
-                <div class="service-card fade-in">
-                    <div class="service-icon">
+                <article class="service-card fade-in">
+                    <div class="service-icon" aria-hidden="true">
                         <i class="fas fa-hands-helping"></i>
                     </div>
                     <h3>Asistencia Digital</h3>
                     <p>Ayudo con tareas digitales específicas: organización de archivos, preparación de materiales, trabajos prácticos o cualquier necesidad digital que tengas.</p>
                     
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Organización de archivos digitales</li>
-                        <li><i class="fas fa-check"></i> Preparación de materiales para presentar</li>
-                        <li><i class="fas fa-check"></i> Ayuda con trabajos prácticos</li>
-                        <li><i class="fas fa-check"></i> Solución de problemas específicos</li>
-                        <li><i class="fas fa-check"></i> Guías paso a paso según tu necesidad</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Organización de archivos digitales</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Preparación de materiales para presentar</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Ayuda con trabajos prácticos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Solución de problemas específicos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Guías paso a paso según tu necesidad</li>
                     </ul>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contact">
+    <section id="contacto" class="contact" aria-labelledby="contacto-title">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Contacto</h2>
+                <h2 id="contacto-title">Contacto</h2>
                 <p class="section-subtitle">Directo por WhatsApp, sin intermediarios</p>
             </div>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item fade-in">
-                        <div class="contact-icon">
+                        <div class="contact-icon" aria-hidden="true">
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="contact-text">
@@ -269,7 +287,7 @@
                     </div>
                     
                     <div class="contact-item fade-in">
-                        <div class="contact-icon">
+                        <div class="contact-icon" aria-hidden="true">
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-text">
@@ -280,7 +298,7 @@
                     </div>
                     
                     <div class="contact-item fade-in">
-                        <div class="contact-icon">
+                        <div class="contact-icon" aria-hidden="true">
                             <i class="fas fa-comments"></i>
                         </div>
                         <div class="contact-text">
@@ -291,7 +309,7 @@
                     </div>
                     
                     <div class="contact-item fade-in">
-                        <div class="contact-icon">
+                        <div class="contact-icon" aria-hidden="true">
                             <i class="fas fa-handshake"></i>
                         </div>
                         <div class="contact-text">
@@ -307,14 +325,14 @@
                     <p>Para cualquier consulta sobre portafolios, ayuda con fotos/videos, documentos o asistencia digital, simplemente escribe a mi WhatsApp:</p>
                     
                     <div class="contact-buttons">
-                        <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer nofollow" class="contact-btn whatsapp">
-                            <i class="fab fa-whatsapp"></i> Abrir WhatsApp
+                        <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer nofollow" class="contact-btn whatsapp" aria-label="Abrir WhatsApp para contactar">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Abrir WhatsApp
                         </a>
                     </div>
                     
-                    <div class="whatsapp-info">
+                    <div class="whatsapp-info" role="note">
                         <p>
-                            <i class="fas fa-info-circle"></i>
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>
                             <strong>Para agilizar:</strong>
                         </p>
                         <ul>
@@ -334,11 +352,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">
-                    <i class="fas fa-code"></i> Dilan Enriquez
+                    <i class="fas fa-code" aria-hidden="true"></i> Dilan Enriquez
                 </div>
                 <div class="social-links">
                     <a href="https://wa.me/5493765168963" target="_blank" rel="noopener noreferrer nofollow" class="social-link whatsapp" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -349,6 +367,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
