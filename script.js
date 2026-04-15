@@ -19,9 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /**
      * Debounce para optimizar eventos de scroll y resize
-     * @param {Function} func - Función a ejecutar
-     * @param {number} wait - Tiempo de espera en ms
-     * @returns {Function} Función debounced
      */
     function debounce(func, wait = 100) {
         let timeout;
@@ -37,9 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /**
      * Throttle para limitar la frecuencia de ejecución
-     * @param {Function} func - Función a ejecutar
-     * @param {number} limit - Límite de tiempo en ms
-     * @returns {Function} Función throttled
      */
     function throttle(func, limit = 100) {
         let inThrottle;
@@ -56,9 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /**
      * Verifica si un elemento está en el viewport
-     * @param {HTMLElement} element - Elemento a verificar
-     * @param {number} offset - Offset en píxeles
-     * @returns {boolean} True si está en el viewport
      */
     function isInViewport(element, offset = 100) {
         const rect = element.getBoundingClientRect();
@@ -196,7 +187,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            // Actualizar enlaces activos
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
@@ -205,7 +195,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
-        // Llamar inicialmente y en scroll
         updateActiveLink();
         window.addEventListener('scroll', throttle(updateActiveLink, 100));
     }
@@ -225,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function initWhatsAppTracking() {
         document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
             link.addEventListener('click', function() {
-                // Aquí puedes agregar Google Analytics
+                // Google Analytics (si está definido)
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'whatsapp_click', {
                         'event_category': 'Contacto',
@@ -233,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 }
                 
-                // También podrías enviar a tu propio backend
+                // Beacon para tracking propio
                 try {
                     navigator.sendBeacon('/api/track-click', JSON.stringify({
                         type: 'whatsapp',
@@ -241,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         timestamp: Date.now()
                     }));
                 } catch (e) {
-                    console.log('Tracking no disponible');
+                    // Silenciar error
                 }
             });
         });
@@ -257,13 +246,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (entry.isIntersecting) {
                         const img = entry.target;
                         
-                        // Cargar imagen desde data-src si existe
                         if (img.dataset.src) {
                             img.src = img.dataset.src;
                             img.removeAttribute('data-src');
                         }
                         
-                        // Cargar imagen desde data-srcset si existe
                         if (img.dataset.srcset) {
                             img.srcset = img.dataset.srcset;
                             img.removeAttribute('data-srcset');
@@ -278,12 +265,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 threshold: 0.1
             });
             
-            // Observar imágenes con lazy loading
             document.querySelectorAll('img[data-src], img[data-srcset]').forEach(img => {
                 imageObserver.observe(img);
             });
         } else {
-            // Fallback para navegadores antiguos
+            // Fallback
             document.querySelectorAll('img[data-src]').forEach(img => {
                 img.src = img.dataset.src;
             });
@@ -294,7 +280,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // OPTIMIZACIÓN DE PERFORMANCE
     // ============================================
     function initPerformanceOptimization() {
-        // Prevenir layout shifts
         const images = document.querySelectorAll('img');
         images.forEach(img => {
             if (!img.complete) {
@@ -306,7 +291,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Optimizar animaciones con requestAnimationFrame
         let ticking = false;
         window.addEventListener('scroll', function() {
             if (!ticking) {
@@ -320,43 +304,47 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ============================================
+    // CIERRE DE MENÚ MÓVIL EN RESIZE
+    // ============================================
+    function initMenuResizeHandler() {
+        window.addEventListener('resize', debounce(() => {
+            if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        }, 150));
+    }
+    
+    // ============================================
     // INICIALIZACIÓN
     // ============================================
     function init() {
-        // Inicializar componentes
         initMobileMenu();
         initSmoothScroll();
         initActiveNavLinks();
         initLazyLoading();
         initWhatsAppTracking();
         initPerformanceOptimization();
+        initMenuResizeHandler(); // Nuevo: cierra menú al agrandar pantalla
         
-        // Configurar eventos
         window.addEventListener('scroll', throttle(handleHeaderScroll, 10));
         window.addEventListener('scroll', throttle(handleFadeAnimations, 50));
         window.addEventListener('resize', debounce(handleFadeAnimations, 150));
         
-        // Ejecutar funciones iniciales
         handleHeaderScroll();
         handleFadeAnimations();
         updateCopyrightYear();
         
-        // Mostrar contenido cuando todo esté listo
         window.addEventListener('load', function() {
             document.body.style.opacity = '1';
             document.body.style.transition = 'opacity 0.3s ease';
-            
-            // Forzar un reflow para asegurar que las animaciones funcionen
-            document.body.offsetHeight;
+            document.body.offsetHeight; // Forzar reflow
         });
         
-        // Fallback: Mostrar contenido después de 2 segundos máximo
         setTimeout(() => {
             document.body.style.opacity = '1';
         }, 2000);
     }
     
-    // Inicializar la aplicación
     init();
     
     // ============================================
@@ -364,10 +352,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     window.addEventListener('error', function(e) {
         console.error('Error capturado:', e.error);
-        // Aquí podrías enviar el error a un servicio de monitoreo
     });
     
-    // Manejar errores de promesas no capturadas
     window.addEventListener('unhandledrejection', function(e) {
         console.error('Promesa rechazada no capturada:', e.reason);
     });
